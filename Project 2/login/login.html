@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NISR | Personnel Authentication</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- LOGIN PAGE -->
+
+    <div class="login-container" id="loginPage">
+
+        <div class="login-box">
+
+            <div class="logo-symbol">N</div>
+
+            <h1>NISR</h1>
+
+            <p class="subtitle">
+                PERSONNEL AUTHENTICATION PORTAL
+            </p>
+
+            <div class="divider"></div>
+
+            <form id="loginForm">
+
+                <label for="username">PERSONNEL ID</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter personnel ID"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="password">ACCESS PASSWORD</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter access password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <p id="errorMessage"></p>
+
+                <button type="submit">
+                    AUTHENTICATE
+                </button>
+
+            </form>
+
+            <p class="clearance">
+                AUTHORIZED PERSONNEL ONLY
+            </p>
+
+            <a href="index.html" class="back-link">
+                ← Return to NISR Homepage
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCP TRANSITION SCREEN -->
+
+    <div class="transition-screen" id="transitionScreen">
+
+        <div class="terminal" id="terminal">
+
+            <p class="terminal-header">
+                SCP FOUNDATION // SECURE NETWORK
+            </p>
+
+            <div class="terminal-divider"></div>
+
+            <div id="terminalText"></div>
+
+            <div class="welcome" id="welcome">
+
+                <div class="scp-logo">SCP</div>
+
+                <h1>WELCOME TO THE SCP FOUNDATION</h1>
+
+                <p>
+                    SECURE. CONTAIN. PROTECT.
+                </p>
+
+                <span>
+                    HUMANITY'S FUTURE IS IN OUR HANDS.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="login.js"></script>
+
+</body>
+</html>
